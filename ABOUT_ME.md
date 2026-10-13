@@ -58,4 +58,4 @@ There are no wrong answers. An honest 1 is more useful to us than a polite 3.
 
 ---
 
-Commit this file when you are done: `git add ABOUT_ME.md`, then `git commit -m "Add my Where are you now self-check"`, then `git push`. Commit it on `main`, or on your `week01` branch if you have one; both are fine.
+Commit this file when you are done: `git add ABOUT_ME.md`, then `git commit -m "Add my Where are you now self-check"`, on your `week01` branch (`main` is protected). It reaches `main` with your first pull request.

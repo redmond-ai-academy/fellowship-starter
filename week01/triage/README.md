@@ -38,7 +38,7 @@ It asks the model for structured output, **validates** the reply with Pydantic, 
 4. **Context experiment.** Change **one** thing in `SYSTEM_INSTRUCTION` (clearer definitions, or two labelled examples). Re-run `--eval`. Record before and after.
 5. **Fill in `EXPLAIN.md`.** Answer first. Walk through every line you did not type yourself.
 6. **Fill in `AI_LOG.md`.** What you asked your assistant, what you kept, what you rejected and why.
-7. **Open a pull request.** `git add .`, `git commit -m "Week 1: Ticket Triage"`, `git push -u origin week01`, then open a PR from `week01` into your own `main` and fill in the template. Write `@ravick` in the PR description (that notifies him), then paste the PR link in the group chat.
+7. **Open a pull request.** `git add .`, `git commit -m "Week 1: Ticket Triage"`, `git push -u origin week01`, then open a PR from `week01` into `main`, fill in the template and request a review from `@ravick` (Reviewers, on the right of the PR). When it's approved, you merge it.
 
 Expect six to eight hours in total, including the learning. Due before Session 02. Your mentor announces the date.
 

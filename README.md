@@ -4,16 +4,18 @@ This is your repo for the 12 weeks of the Applied AI Training and Fellowship at 
 
 This starter is provided for Fellows' use. The company and tickets in it are fictional.
 
+> **On the `fellowship-starter` page?** Don't click "Use this template". Your mentor creates your repo for you in the `redmond-ai-academy` organisation.
+
 ## First-time setup
 
 You do this once. If a step fails, do not guess. Paste the error to your mentor.
 
-**1. Create your repo from the template.** On the template page, click **Use this template**, then **Create a new repository**. Owner: your own GitHub account. Name: `fellowship-<your-github-username>`. Visibility: **Public**. Never commit your `.env` file; it is already git-ignored. Then paste your new repo's URL in the group chat, so your mentor can find it.
+**1. Get your repo.** Post your GitHub username in the group chat. Your mentor creates `redmond-ai-academy/fellowship-<your-username>` for you, with Write access, and GitHub sends you an invitation. Accept it from the email, or open `https://github.com/redmond-ai-academy/fellowship-<your-username>/invitations` while signed in. The repo is public and shows on your GitHub profile as your work; at the end of the Fellowship we can transfer it to your own account. Never commit your `.env` file; it is already git-ignored.
 
-**2. Clone it into a dedicated folder** (not your Desktop, not your Documents, not your home folder). Copy the clone URL from your new repo and run:
+**2. Clone it into a dedicated folder** (not your Desktop, not your Documents, not your home folder). For example `mkdir -p ~/code; cd ~/code` on Mac, or `mkdir -Force $HOME\code; cd $HOME\code` in Windows PowerShell. Then:
 
 ```
-git clone https://github.com/<your-username>/fellowship-<your-username>.git
+git clone https://github.com/redmond-ai-academy/fellowship-<your-username>.git
 cd fellowship-<your-username>
 ```
 
@@ -63,9 +65,9 @@ On Mac you may need `python3` instead of `python` outside the virtual environmen
 1. **Branch.** Start each week on its own branch: `git switch -c week01`.
 2. **Build.** Small steps. Run the tests often.
 3. **Commit.** Commit when something works, with a message that says what and why. Commits are your undo button.
-4. **Push and open a pull request** into your own `main`: `git push -u origin week01`, then click the link GitHub prints. Fill in the PR template honestly. Write `@ravick` in the PR description (that notifies your mentor), then paste the PR link in the group chat. You can't pick him in the Reviewers box, because he isn't a collaborator on your repo; the mention is enough.
+4. **Push and open a pull request** into `main`: `git push -u origin week01`, then click the link GitHub prints. Fill in the PR template honestly. Under **Reviewers** (on the right of the PR), request a review from `@ravick`. `main` is protected: changes reach it only through an approved pull request, so a direct push to `main` is rejected. That's expected.
 5. **Review.** Your mentor comments. You answer, change, push again. A review is a conversation, not a mark.
-6. **Merge** when your mentor says so. Then start the next week from an updated `main`.
+6. **Merge** when your mentor approves. Then start the next week from an updated `main`.
 
 ## House rules
 
