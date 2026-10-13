@@ -17,7 +17,11 @@ git clone https://github.com/<your-username>/fellowship-<your-username>.git
 cd fellowship-<your-username>
 ```
 
-**3. Make a virtual environment and install the packages.**
+**3. Open the folder in VS Code.** In VS Code: **File → Open Folder** and pick your `fellowship-<your-username>` folder (or run `code .` inside it). Open only this folder, never your home folder or a whole drive. If VS Code asks "Do you trust the authors?", choose **Yes** for your own repo. Accept its offer to install the recommended extensions: **Google Antigravity** (your AI coding assistant) and **Python**.
+
+**Set up Antigravity safely, before you ask it anything.** Click the Antigravity icon in the Activity Bar and sign in with your personal Gmail. Then open **Agent Settings** and set **Terminal command auto-execution** to **Request Review** (the agent never runs a command without asking you). Never choose **Always Proceed**. Keep the Allow list empty and leave non-workspace file access off. This repo's `.vscode/settings.json` already turns off auto-accepting the agent's edits, so you review every change: accept or reject one hunk at a time, and do not press **Accept All** on code you have not read. Chat: Cmd+L on Mac, Ctrl+L on Windows.
+
+**4. Make a virtual environment and install the packages.** Use the VS Code terminal (**Terminal → New Terminal**).
 
 Mac / Linux:
 
@@ -37,14 +41,14 @@ pip install -r requirements.txt
 
 If PowerShell refuses to run the activate script, run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once, then try again. Your prompt should now start with `(.venv)`.
 
-**4. Add your API key.** Get a free Gemini API key at https://aistudio.google.com/apikey (use your personal Gmail). Then copy the example file and paste the key after the `=` sign. Save the file as UTF-8.
+**5. Add your API key.** Get a free Gemini API key at https://aistudio.google.com/apikey (use your personal Gmail). Then copy the example file and paste the key after the `=` sign. Save the file as UTF-8.
 
 Mac / Linux: `cp .env.example .env`
 Windows PowerShell: `Copy-Item .env.example .env`
 
 Open `.env` in VS Code and fill in `GEMINI_API_KEY=`. Free-tier requests may be used by Google to improve its products, so never send real customer or personal data. Our tickets are synthetic.
 
-**5. Check your setup.**
+**6. Check your setup.**
 
 ```
 python week00/check_setup.py
@@ -69,7 +73,7 @@ On Mac you may need `python3` instead of `python` outside the virtual environmen
 - **Synthetic data only.** Never put real customer data, personal data or secrets in this repo.
 - **Never commit `.env`.** If you ever do, tell your mentor straight away. We rotate the key and learn from it together.
 - **Read before you approve.** When your coding assistant wants to run a command, read it. If you do not understand it, say no and ask.
-- **Open only this folder** in your editor and assistant.
+- **Open only this folder** in VS Code and Antigravity.
 - **Say what the AI wrote and what you wrote.** In the PR, in `AI_LOG.md`, out loud. It is a skill.
 
 ## Where things are
@@ -81,6 +85,7 @@ On Mac you may need `python3` instead of `python` outside the virtual environmen
 | `articulation/` | The Articulation Track: your written and recorded homework, week by week |
 | `ABOUT_ME.md` | Your "Where are you now?" self-check. Fill it in and commit it |
 | `AGENTS.md` | Rules your AI coding assistant follows in this repo |
+| `.vscode/` | Safe editor settings and recommended extensions. Leave them in place |
 
 ## Articulation homework
 
