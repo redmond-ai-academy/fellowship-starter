@@ -48,7 +48,7 @@ If PowerShell refuses to run the activate script, run `Set-ExecutionPolicy -Scop
 Mac / Linux: `cp .env.example .env`
 Windows PowerShell: `Copy-Item .env.example .env`
 
-Open `.env` in VS Code and fill in `GEMINI_API_KEY=`. Free-tier requests may be used by Google to improve its products, so never send real customer or personal data. Our tickets are synthetic.
+Open `.env` in VS Code and fill in `GEMINI_API_KEY=`. If VS Code then says *"An environment file is configured but terminal environment injection is disabled…"*, click **Don't Show Again**. Do not enable `python.terminal.useEnvFile`: our code reads `.env` itself, and that setting would copy your key into every terminal, including the ones the agent uses. Free-tier requests may be used by Google to improve its products, so never send real customer or personal data. Our tickets are synthetic.
 
 **6. Check your setup.**
 
