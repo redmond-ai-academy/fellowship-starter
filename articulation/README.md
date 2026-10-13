@@ -4,7 +4,7 @@ Building something good is half the job. Explaining it clearly is the other half
 
 ## How it works
 
-- **Every session** has a short speaking drill. You do it with a partner first, then a few volunteers share, never a surprise first turn.
+- **Every session** has a short speaking drill. Pairs first when the group is large. While we're a small group, we go round the room in an order you'll know in advance, so nobody gets a surprise first turn.
 - **Every week** has one homework task: something you record or write, and then review yourself.
 - **Same rubric every week**, so you can see your own line move. In Week 12 you re-record your Week 1 introduction and compare.
 
@@ -14,7 +14,7 @@ Think in Tamil if it helps. Rehearse in any language. Deliver in English. Conten
 
 One file per week in this folder: `week01-introduction.md`, then `week02-...md` and so on. Your mentor tells you the topic each week. Commit the file in your pull request.
 
-**Recordings are not committed to this public repo.** Record on your phone or laptop, upload to your own Google Drive, set sharing to **Restricted**, add your mentor's email as a viewer, and paste the link in your file. Do not use "anyone with the link" and do not post it on social media. You can delete the recording whenever you like.
+**Recordings are not committed to this public repo.** Record on your phone or laptop, then send it to Ravi on WhatsApp, or upload it to your Google Drive, keep General access **Restricted**, share it with **fellowship@hybr.com** as a viewer and paste the link in your file. Do not use "anyone with the link" and do not post it on social media. You can delete the recording whenever you like.
 
 ## Giving and receiving feedback
 

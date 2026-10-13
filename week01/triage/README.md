@@ -29,6 +29,7 @@ It asks the model for structured output, **validates** the reply with Pydantic, 
 
 ## Your steps
 
+0. **Branch first.** Before you change anything: `git switch -c week01`. Commit often as you go.
 1. **Make the four tests pass.** From the repo root: `python -m pytest week01/triage/tests`. They use a `FakeClient`, so no key or network is needed. Read each failure before you change anything.
 2. **Run it for real** on the 12 tickets: `python week01/triage/run.py --eval`. Write down both accuracies. Want to see the table before you have a key? Add `--fake` (a crude keyword guesser, not an AI).
 3. **Variation experiment.** Run one ticket five times at temperature 1.0, and five times at 0:
@@ -37,7 +38,7 @@ It asks the model for structured output, **validates** the reply with Pydantic, 
 4. **Context experiment.** Change **one** thing in `SYSTEM_INSTRUCTION` (clearer definitions, or two labelled examples). Re-run `--eval`. Record before and after.
 5. **Fill in `EXPLAIN.md`.** Answer first. Walk through every line you did not type yourself.
 6. **Fill in `AI_LOG.md`.** What you asked your assistant, what you kept, what you rejected and why.
-7. **Open a pull request** from branch `week01` into your own `main`, with the template filled in. Add `@ravick` as reviewer.
+7. **Open a pull request.** `git add .`, `git commit -m "Week 1: Ticket Triage"`, `git push -u origin week01`, then open a PR from `week01` into your own `main` and fill in the template. Write `@ravick` in the PR description (that notifies him), then paste the PR link in the group chat.
 
 Expect six to eight hours in total, including the learning. Due before Session 02. Your mentor announces the date.
 

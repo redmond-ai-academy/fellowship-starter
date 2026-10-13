@@ -8,7 +8,7 @@ This starter is provided for Fellows' use. The company and tickets in it are fic
 
 You do this once. If a step fails, do not guess. Paste the error to your mentor.
 
-**1. Create your repo from the template.** On the template page, click **Use this template**, then **Create a new repository**. Owner: your own GitHub account. Name: `fellowship-<your-github-username>`. Visibility: **Public**. Never commit your `.env` file; it is already git-ignored.
+**1. Create your repo from the template.** On the template page, click **Use this template**, then **Create a new repository**. Owner: your own GitHub account. Name: `fellowship-<your-github-username>`. Visibility: **Public**. Never commit your `.env` file; it is already git-ignored. Then paste your new repo's URL in the group chat, so your mentor can find it.
 
 **2. Clone it into a dedicated folder** (not your Desktop, not your Documents, not your home folder). Copy the clone URL from your new repo and run:
 
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 If PowerShell refuses to run the activate script, run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once, then try again. Your prompt should now start with `(.venv)`.
 
-**5. Add your API key.** Get a free Gemini API key at https://aistudio.google.com/apikey (use your personal Gmail). Then copy the example file and paste the key after the `=` sign. Save the file as UTF-8.
+**5. Add your API key** (you can do this after class). Get a free Gemini API key at https://aistudio.google.com/apikey (use your personal Gmail). Then copy the example file and paste the key after the `=` sign. Save the file as UTF-8.
 
 Mac / Linux: `cp .env.example .env`
 Windows PowerShell: `Copy-Item .env.example .env`
@@ -63,7 +63,7 @@ On Mac you may need `python3` instead of `python` outside the virtual environmen
 1. **Branch.** Start each week on its own branch: `git switch -c week01`.
 2. **Build.** Small steps. Run the tests often.
 3. **Commit.** Commit when something works, with a message that says what and why. Commits are your undo button.
-4. **Push and open a pull request** into your own `main`: `git push -u origin week01`, then click the link GitHub prints. Fill in the PR template honestly. Add your mentor (`@ravick`) as reviewer.
+4. **Push and open a pull request** into your own `main`: `git push -u origin week01`, then click the link GitHub prints. Fill in the PR template honestly. Write `@ravick` in the PR description (that notifies your mentor), then paste the PR link in the group chat. You can't pick him in the Reviewers box, because he isn't a collaborator on your repo; the mention is enough.
 5. **Review.** Your mentor comments. You answer, change, push again. A review is a conversation, not a mark.
 6. **Merge** when your mentor says so. Then start the next week from an updated `main`.
 
